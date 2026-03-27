@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView txtNumero; /
+    TextView txtNumero; 
     Button btnGerar, btnLimpar; 
 
     Random random = new Random(); 
