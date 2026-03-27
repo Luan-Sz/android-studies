@@ -11,9 +11,9 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView txtFrase; // mostra a frase
-    Button btnGerar; // botão
-    ImageView imgFrase; // imagem
+    TextView txtFrase; 
+    Button btnGerar; 
+    ImageView imgFrase;
 
     Random random = new Random();
 
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             "Eu me divirto"
     };
 
-    // imagens (tem que bater com as frases)
+    
     int[] imagens = {
             R.drawable.cyberpunk_meme,
             R.drawable.ozzymandis,
@@ -54,15 +54,15 @@ public class MainActivity extends AppCompatActivity {
         btnGerar = findViewById(R.id.btnGerar);
         imgFrase = findViewById(R.id.imgFrase);
 
-        // clique do botão
+        
         btnGerar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                int index = random.nextInt(frases.length); // escolhe posição
+                int index = random.nextInt(frases.length); 
 
-                txtFrase.setText(frases[index]); // muda frase
-                imgFrase.setImageResource(imagens[index]); // muda imagem
+                txtFrase.setText(frases[index]); 
+                imgFrase.setImageResource(imagens[index]); 
             }
         });
     }
