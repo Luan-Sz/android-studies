@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UCANnotGUESS">
 
-        <!-- define a tela principal -->
+        
         <activity
             android:name=".MainActivity"
             android:exported="true">
